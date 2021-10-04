@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const ListXps = styled.div``
+const ListXps = styled.div`
+  width: 60%`
 const Xp = styled.div``
 const Poste = styled.div``
 const InfoXp = styled.div``
