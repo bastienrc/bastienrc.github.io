@@ -1,3 +1,7 @@
+export const DataIdentity = {
+  fullname: 'Sébastien Colbert'
+}
+
 export const DataExperiences = [
   {
     id: 1,
