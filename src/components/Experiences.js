@@ -1,40 +1,39 @@
-import Slider from '@material-ui/core/Slider'
 import styled from 'styled-components'
 
-const Container = styled.div`
-  width: 60%;
-  padding-right: 5px;
+const XpTitle = styled.div`
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-weight: 600;
+  padding: 0 0 15px 0;
+  border-bottom: 3px solid black;
+  color: #060;
 `
 
-const Xp = styled.div``
+const Xp = styled.div`
+  margin: 10px 0;
+`
 
 const Poste = styled.div`
-  font-family: 'Fira Code', 'Courier New', Courier, monospace;
 `
+
 const InfoXp = styled.div``
-const Resume = styled.div``
-
-const CustomizedSlider = styled(Slider)`
-  color: #20b2aa;
-
-  :hover {
-    color: #2e8b57;
-  }
+const Resume = styled.div`
+  margin: 10px 0 20px 0
 `
 
 function Experiences ({ data }) {
   return (
-    <Container>
-      <Poste>Expériences</Poste>
-      <CustomizedSlider defaultValue={30} />
+    <>
+      <XpTitle>Expérience Professionelle</XpTitle>
       {data.map((xp) => (
-        <div key={xp.id}>
-          <h3>{xp.Poste}</h3>
-          <p>{xp.Entreprise}, {xp.Periode}, {xp.Ville}</p>
-          <p>{xp.Resume}</p>
-        </div>
+        <Xp key={xp.id}>
+          <Poste>{xp.Poste}</Poste>
+          <infoXp>{xp.Entreprise}, {xp.Periode}, {xp.Ville}</infoXp>
+          <Resume>{xp.Resume}</Resume>
+        </Xp>
       ))}
-    </Container>
+    </>
   )
 };
 
