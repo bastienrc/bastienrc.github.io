@@ -1,33 +1,41 @@
-import React from 'react'
+import Slider from '@material-ui/core/Slider'
 import styled from 'styled-components'
 
-const ListXps = styled.div`
-  width: 60%`
+const Container = styled.div`
+  width: 60%;
+  padding-right: 5px;
+`
+
 const Xp = styled.div``
-const Poste = styled.div``
+
+const Poste = styled.div`
+  font-family: 'Fira Code', 'Courier New', Courier, monospace;
+`
 const InfoXp = styled.div``
 const Resume = styled.div``
 
-function Experiences () {
+const CustomizedSlider = styled(Slider)`
+  color: #20b2aa;
+
+  :hover {
+    color: #2e8b57;
+  }
+`
+
+function Experiences ({ data }) {
   return (
-    <ListXps>
-      <Xp>
-        <Poste>Développeur Web</Poste>
-        <InfoXp>Speedphone's, 2019, Boulogne-sur-mer</InfoXp>
-        <Resume>Développement du site de la société avec le framework Symfony.</Resume>
-      </Xp>
-      <Xp>
-        <Poste>Développeur Web</Poste>
-        <InfoXp>Speedphone's, 2019, Boulogne-sur-mer</InfoXp>
-        <Resume>Développement du site de la société avec le framework Symfony.</Resume>
-      </Xp>
-      <Xp>
-        <Poste>Développeur Web</Poste>
-        <InfoXp>Speedphone's, 2019, Boulogne-sur-mer</InfoXp>
-        <Resume>Développement du site de la société avec le framework Symfony.</Resume>
-      </Xp>
-    </ListXps>
+    <Container>
+      <Poste>Expériences</Poste>
+      <CustomizedSlider defaultValue={30} />
+      {data.map((xp) => (
+        <div key={xp.id}>
+          <h3>{xp.Poste}</h3>
+          <p>{xp.Entreprise}, {xp.Periode}, {xp.Ville}</p>
+          <p>{xp.Resume}</p>
+        </div>
+      ))}
+    </Container>
   )
-}
+};
 
 export default Experiences
