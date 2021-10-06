@@ -6,20 +6,23 @@ const XpTitle = styled.div`
   line-height: 1.2rem;
   font-weight: 600;
   padding: 0 0 15px 0;
-  border-bottom: 3px solid black;
+  border-bottom: 2px solid black;
   color: #060;
+  margin: 2rem 0 1rem 0;
 `
 
 const Xp = styled.div`
-  margin: 10px 0;
+  margin: 1rem 0 2rem 0;
 `
 
 const Poste = styled.div`
+  font-weight: 600;
 `
 
 const InfoXp = styled.div``
 const Resume = styled.div`
-  margin: 10px 0 20px 0
+  margin: 10px 0 20px 0;
+  font-style: italic;
 `
 
 function Experiences ({ data }) {
@@ -29,7 +32,7 @@ function Experiences ({ data }) {
       {data.map((xp) => (
         <Xp key={xp.id}>
           <Poste>{xp.Poste}</Poste>
-          <infoXp>{xp.Entreprise}, {xp.Periode}, {xp.Ville}</infoXp>
+          <InfoXp>{xp.Entreprise}, {xp.Periode}, {xp.Ville}</InfoXp>
           <Resume>{xp.Resume}</Resume>
         </Xp>
       ))}
