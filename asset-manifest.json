@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.js": "/static/js/main.305b1b94.chunk.js",
-    "main.js.map": "/static/js/main.305b1b94.chunk.js.map",
+    "main.js": "/static/js/main.df8e4e08.chunk.js",
+    "main.js.map": "/static/js/main.df8e4e08.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e7f0a1cb.js",
     "runtime-main.js.map": "/static/js/runtime-main.e7f0a1cb.js.map",
-    "static/js/2.26e19f03.chunk.js": "/static/js/2.26e19f03.chunk.js",
-    "static/js/2.26e19f03.chunk.js.map": "/static/js/2.26e19f03.chunk.js.map",
+    "static/css/2.49c0d76c.chunk.css": "/static/css/2.49c0d76c.chunk.css",
+    "static/js/2.58b2c8a5.chunk.js": "/static/js/2.58b2c8a5.chunk.js",
+    "static/js/2.58b2c8a5.chunk.js.map": "/static/js/2.58b2c8a5.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.26e19f03.chunk.js.LICENSE.txt": "/static/js/2.26e19f03.chunk.js.LICENSE.txt"
+    "static/css/2.49c0d76c.chunk.css.map": "/static/css/2.49c0d76c.chunk.css.map",
+    "static/js/2.58b2c8a5.chunk.js.LICENSE.txt": "/static/js/2.58b2c8a5.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/fira-code-latin-ext-400-normal.db5a1888.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.e7f0a1cb.js",
-    "static/js/2.26e19f03.chunk.js",
-    "static/js/main.305b1b94.chunk.js"
+    "static/css/2.49c0d76c.chunk.css",
+    "static/js/2.58b2c8a5.chunk.js",
+    "static/js/main.df8e4e08.chunk.js"
   ]
 }
