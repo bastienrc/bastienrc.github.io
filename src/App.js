@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-import CssBaseline from '@material-ui/core/CssBaseline'
-import { makeStyles } from '@material-ui/core/styles'
-import Grid from '@material-ui/core/Grid'
+import CssBaseline from '@mui/core/CssBaseline'
+import { makeStyles } from '@mui/core/styles'
+import Grid from '@mui/core/Grid'
 
 import Experiences from './components/Experiences'
 import Formations from './components/Formations'
