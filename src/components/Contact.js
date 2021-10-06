@@ -1,23 +1,43 @@
 import styled from 'styled-components'
 import Networks from './Networks'
 
-const Contact = styled.div``
-const Address = styled.div``
-const Phone = styled.div``
-const Mail = styled.div``
-const Site = styled.div``
+const Title = styled.div`
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-weight: 600;
+  padding: 0 0 15px 0;
+  border-bottom: 2px solid black;
+  color: #060;
+  margin: 3rem 0 1rem 0;
+`
 
-function Contacts () {
+const Address = styled.div``
+
+const Mail = styled.a`
+  display: block;
+  text-decoration: none;
+  color: black;
+`
+
+const Site = styled.a`
+  display: block;
+  text-decoration: none;
+  color: black;
+`
+
+function Contact () {
   return (
-    <Contact>
-      <Address>4 Avenue Charles de Gaulle 62200 Boulogne-sur-mer</Address>
-      <Phone>06 18 17 92 65</Phone>
-      <Mail>colbertsebastien@gmail.com</Mail>
+    <>
+      <Title>Contact</Title>
+      <Address>4 Avenue Charles de Gaulle</Address>
+      <Address>62200 Boulogne-sur-mer</Address>
+      <Mail href='mailto:colbertsebastien@gmail.com'>colbertsebastien@gmail.com</Mail>
       <Site>sebastiencolbert.fr</Site>
       <Networks />
-    </Contact>
+    </>
 
   )
 }
 
-export default Contacts
+export default Contact

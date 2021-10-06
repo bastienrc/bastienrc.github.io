@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-const ListCompetences = styled.div``
 const Competence = styled.div``
 const Group = styled.div``
 const Name = styled.div``
@@ -8,22 +7,32 @@ const Level = styled.div``
 
 function Competences () {
   return (
-    <ListCompetences>
-      <Competence>
-        <Group>
+    <>
+      <Group>
+        <Competence>
           <Name>GNU/Linux Debian</Name><Level>3</Level>
+        </Competence>
+        <Competence>
           <Name>GNU/Linux Debian</Name><Level>3</Level>
-        </Group>
-        <Group>
+        </Competence>
+      </Group>
+      <Group>
+        <Competence>
           <Name>GNU/Linux Debian</Name><Level>3</Level>
+        </Competence>
+        <Competence>
           <Name>GNU/Linux Debian</Name><Level>3</Level>
+        </Competence>
+      </Group>
+      <Group>
+        <Competence>
           <Name>GNU/Linux Debian</Name><Level>3</Level>
-        </Group>
-        <Group>
+        </Competence>
+        <Competence>
           <Name>GNU/Linux Debian</Name><Level>3</Level>
-        </Group>
-      </Competence>
-    </ListCompetences>
+        </Competence>
+      </Group>
+    </>
   )
 }
 

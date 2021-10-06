@@ -1,30 +1,28 @@
 import styled from 'styled-components'
 
-const ListNetworks = styled.div``
-const Network = styled.div``
-const Icon = styled.div``
-const Name = styled.div``
-const Url = styled.div``
+const Network = styled.div`
+  margin: 10px 0;
+`
 
 function Networks () {
   return (
-    <ListNetworks>
+    <>
       <Network>
-        <Icon>firecamps</Icon>
-        <Name>Freecodecamp.org</Name>
-        <Url>https://www.freecodecamp.org/bastienrc</Url>
+        <a href='https://www.freecodecamp.org/bastienrc' title='Freecodecamp.org'>
+          <img src='firecamps' alt='Freecodecamp.org' />
+        </a>
       </Network>
       <Network>
-        <Icon>firecamps</Icon>
-        <Name>Freecodecamp.org</Name>
-        <Url>https://www.freecodecamp.org/bastienrc</Url>
+        <a href='https://www.freecodecamp.org/bastienrc' title='Freecodecamp.org'>
+          <img src='firecamps' alt='Freecodecamp.org' />
+        </a>
       </Network>
       <Network>
-        <Icon>firecamps</Icon>
-        <Name>Freecodecamp.org</Name>
-        <Url>https://www.freecodecamp.org/bastienrc</Url>
+        <a href='https://www.freecodecamp.org/bastienrc' title='Freecodecamp.org'>
+          <img src='firecamps' alt='Freecodecamp.org' />
+        </a>
       </Network>
-    </ListNetworks>
+    </>
   )
 }
 

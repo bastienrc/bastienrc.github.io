@@ -7,11 +7,13 @@ const Fullname = styled.div`
 
 const Info = styled.div`
   font-size: 0.8rem;
+  margin: 0.2rem 0 1rem 0;
 `
 
 const PosteSearch = styled.div`
   font-family: 'Fira Code', 'Courier New', Courier, monospace;
-  font-size: 2rem;
+  margin: 2rem 0;
+  font-size: 3rem;
   color: #060
 `
 
