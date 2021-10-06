@@ -33,7 +33,7 @@ export const DataExperiences = [
   {
     id: 4,
     Entreprise: 'Satisfair',
-    Periode: '2008,',
+    Periode: '2008',
     Ville: 'Samer',
     Poste: 'Technicien réseau',
     Resume: 'Développement web frontend principalement.',
@@ -42,7 +42,7 @@ export const DataExperiences = [
   {
     id: 5,
     Entreprise: 'Corrue et Deseille',
-    Periode: '2008,',
+    Periode: '2008',
     Ville: 'Boulogne-sur-mer',
     Poste: 'Développeur Web',
     Resume: "Développement du site de l'entreprise en HTML et CSS pour le frontend. Le Backend a été développé en PHP avec le framework Symfony.",
