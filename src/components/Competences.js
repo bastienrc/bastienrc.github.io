@@ -1,57 +1,35 @@
 import styled from 'styled-components'
+import CompetenceComponent from './Competence'
 
-const Competence = styled.div`
-  display: flex;
-  justify-content: space-between;
+const Competences = styled.div``
+
+const Title = styled.div`
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-weight: 600;
+  padding: 0 0 15px 0;
+  border-bottom: 2px solid black;
+  color: #060;
+  margin: 3rem 0 1rem 0;
 `
+
 const Group = styled.div``
-const Name = styled.div``
-const Level = styled.div`
-  display: flex;
-`
-const Star = styled.span`
-  display: block;
-  width: 20px;
-  height: 20px;
-  background-color: #000;
-  margin: 0 5px;
-  border-radius: 50%;
-`
 
-function Competences () {
+function CompetencesComponent ({ data }) {
   return (
-    <>
-      <Group>
-        <Competence>
-          <Name>GNU/Linux Debian</Name>
-          <Level>
-            <Star />
-            <Star />
-            <Star />
-          </Level>
-        </Competence>
-        <Competence>
-          <Name>GNU/Linux Debian</Name><Level>3</Level>
-        </Competence>
-      </Group>
-      <Group>
-        <Competence>
-          <Name>GNU/Linux Debian</Name><Level>3</Level>
-        </Competence>
-        <Competence>
-          <Name>GNU/Linux Debian</Name><Level>3</Level>
-        </Competence>
-      </Group>
-      <Group>
-        <Competence>
-          <Name>GNU/Linux Debian</Name><Level>3</Level>
-        </Competence>
-        <Competence>
-          <Name>GNU/Linux Debian</Name><Level>3</Level>
-        </Competence>
-      </Group>
-    </>
+    <Competences>
+      <Title>Competences</Title>
+      {
+        data.map((competence, i) => (
+          <Group key={i}>
+            <h3>competence.group</h3>
+            <CompetenceComponent label='Test' level='4' />
+          </Group>
+        ))
+      }
+    </Competences>
   )
 }
 
-export default Competences
+export default CompetencesComponent
