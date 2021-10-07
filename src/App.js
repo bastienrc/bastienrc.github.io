@@ -5,6 +5,7 @@ import FormationsComponent from './components/Formations'
 import ContactComponent from './components/Contact'
 import CompetencesComponent from './components/Competences'
 import HeaderComponent from './components/Header'
+import QRCode from './components/QRCode'
 import { DataIdentity, DataExperiences, DataFormations, DataCompetences } from './data/data.js'
 
 const GlobalStyle = createGlobalStyle`
@@ -39,8 +40,6 @@ const Main = styled.main`
     background: #FFF;
   }
 `
-
-const QRCode = styled.div``
 
 function App () {
   return (
