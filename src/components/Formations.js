@@ -11,12 +11,14 @@ const Title = styled.div`
   margin: 1rem 0;
 `
 
+const Formations = styled.div``
+
 const Formation = styled.div`
   display: flex;
   margin: 1rem 0;
 `
 
-const Year = styled.span`
+const Periode = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,33 +39,26 @@ const Info = styled.div`
   margin: 15px 0 0 5px;
 `
 
-function Formations () {
+const Option = styled.p`
+  font-style: italic;
+`
+
+function FormationsComponent ({ data }) {
   return (
-    <>
+    <Formations>
       <Title>Formation</Title>
-      <Formation>
-        <Year>2020</Year>
-        <Info>
-          <p>Titre professionnel "Développeur Web et Web mobile"</p>
-          <p>Simplon Boulogne-sur-mer</p>
-        </Info>
-      </Formation>
-      <Formation>
-        <Year>2020</Year>
-        <Info>
-          <p>Titre professionnel "Développeur Web et Web mobile"</p>
-          <p>Simplon Boulogne-sur-mer</p>
-        </Info>
-      </Formation>
-      <Formation>
-        <Year>2020</Year>
-        <Info>
-          <p>Titre professionnel "Développeur Web et Web mobile"</p>
-          <p>Simplon Boulogne-sur-mer</p>
-        </Info>
-      </Formation>
-    </>
+      {data.map((formation) => (
+        <Formation key={formation.periode}>
+          <Periode>{formation.periode}</Periode>
+          <Info>
+            <p>{formation.diplome}</p>
+            {formation.option !== '' ? <Option>{formation.option}</Option> : null}
+            <p>{formation.ets}</p>
+          </Info>
+        </Formation>
+      ))}
+    </Formations>
   )
 }
 
-export default Formations
+export default FormationsComponent

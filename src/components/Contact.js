@@ -1,5 +1,9 @@
 import styled from 'styled-components'
-import ListNetworks from './Networks'
+import NetworksComponent from './Networks'
+
+const Contact = styled.div`
+  margin: 10px 0;
+`
 
 const Title = styled.div`
   text-transform: uppercase;
@@ -26,17 +30,17 @@ const Site = styled.a`
   color: black;
 `
 
-function Contact () {
+function ContactComponent ({ data }) {
   return (
-    <>
+    <Contact>
       <Title>Contact</Title>
-      <Address>4 Avenue Charles de Gaulle</Address>
-      <Address>62200 Boulogne-sur-mer</Address>
-      <Mail href='mailto:colbertsebastien@gmail.com'>colbertsebastien@gmail.com</Mail>
-      <Site href='https://sebastiencolbert.fr'>sebastiencolbert.fr</Site>
-      <ListNetworks />
-    </>
+      <Address>{data.address}</Address>
+      <Address>{data.cp} {data.ville}</Address>
+      <Mail href={'mailto:' + data.mail}>{data.mail}</Mail>
+      <Site href={'https://' + data.site}>{data.site}</Site>
+      <NetworksComponent data={data.networks} />
+    </Contact>
   )
 }
 
-export default Contact
+export default ContactComponent

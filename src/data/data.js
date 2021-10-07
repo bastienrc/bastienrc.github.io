@@ -1,5 +1,20 @@
 export const DataIdentity = {
-  fullname: 'Sébastien Colbert'
+  fullname: 'Sébastien Colbert',
+  info: '39 ans, Permis B, Voiture',
+  posteSearch: 'Développeur Web',
+  address: '4 Avenue Charles de Gaulle',
+  cp: '62200',
+  ville: 'Boulogne-sur-mer',
+  mail: 'colbertsebastien@gmail.com',
+  site: 'sebastiencolbert.fr',
+  networks: {
+    freecodecamp: 'https://www.freecodecamp.org/bastienrc',
+    github: 'https://github.com/bastienrc',
+    viadeo: 'http://fr.viadeo.com/fr/profile/sebastien.colbert',
+    codepen: 'https://codepen.io/bastienrc',
+    linkedin: 'https://www.linkedin.com/in/sebastiencolbert',
+    twitter: 'https://twitter.com/bastienrc'
+  }
 }
 
 export const DataExperiences = [
@@ -45,7 +60,7 @@ export const DataExperiences = [
     Periode: '2008',
     Ville: 'Boulogne-sur-mer',
     Poste: 'Développeur Web',
-    Resume: "Développement du site de l'entreprise en HTML et CSS pour le frontend. Le Backend a été développé en PHP avec le framework Symfony.",
+    Resume: 'Développement du site de l\'entreprise en HTML et CSS pour le frontend. Le Backend a été développé en PHP avec le framework Symfony.',
     Visible: false
   }
 ]
@@ -75,28 +90,30 @@ export const DataCompetences = [
   }
 ]
 
-export const DataFormations = {
-  '2007-2008': "Licence Professionnelle Réseaux et Systèmes de Communication Option Conception et Développement d'applications réseau à l'IUT de Calais.",
-  2007: "Stage Intensif d'Anglais (janvier et février) au CUEEP et à Concorde.",
-  '2004-2007': 'DEUST BCMM (Bureautique, Communication et Multimédia) option TM (Technicien Multimédia) au CUEEP Littoral.',
-  '2000-2002': 'BAC Professionnel Comptabilité au L.P. Tertiaire St Joseph à Saint Martin.',
-  '1998-2000': 'BEP des Métiers de la Comptabilité au L.P. Tertiaire St Joseph à Saint Martin.'
-}
-
-export const DataDiplomes = {
-  'Juin 2008': "Licence Professionnelle Réseaux et Systèmes de Communication Option Conception et Développement  d'applications réseau à l'IUT de Calais.",
-  'Juillet 2007': 'DEUST BCMM (Bureautique, Communication et Multimédia) option TM (Technicien Multimédia) au CUEEP Littoral.',
-  'Juin 2002': 'BAC Professionnel Comptabilité au L.P. Tertiaire St Joseph à Saint Martin.',
-  'Juin 2000': 'BEP des Métiers de la Comptabilité au L.P. Tertiaire st Joseph à Saint-Martin.'
-}
+export const DataFormations = [
+  {
+    periode: '2020',
+    diplome: 'Titre professionnel « Développeur Web et Web mobile »',
+    option: '',
+    ets: 'Simplon Boulogne-sur-mer'
+  },
+  {
+    periode: '2008',
+    diplome: 'Licence Professionnelle « Réseaux et Systèmes de Communication »',
+    option: "Option Conception et Développement d'applications réseau",
+    ets: 'IUT de Calais'
+  },
+  {
+    periode: '2007',
+    diplome: 'DEUST Bureautique Communication et MultiMédia',
+    option: 'Option Technicien Multimédia',
+    ets: 'CUEEP Littoral de Boulogne-sur-mer'
+  }
+]
 
 export const DataHobbies = [
   'Japonais',
   'Cinéma',
   'Jeux vidéos',
   'Littérature'
-]
-
-export const DataDivers = [
-  'Permis B'
 ]

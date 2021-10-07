@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import '@fontsource/fira-code'
 
+const Header = styled.div``
+
 const Fullname = styled.div`
   font-size: 1.8rem;
 `
@@ -17,14 +19,14 @@ const PosteSearch = styled.div`
   color: #060
 `
 
-function Header () {
+function HeaderComponent ({ data }) {
   return (
-    <>
-      <Fullname>Sébastien Colbert</Fullname>
-      <Info>39 ans, Permis B, Voiture</Info>
-      <PosteSearch>Développeur Web</PosteSearch>
-    </>
+    <Header>
+      <Fullname>{data.fullname}</Fullname>
+      <Info>{data.info}</Info>
+      <PosteSearch>{data.posteSearch}</PosteSearch>
+    </Header>
   )
 }
 
-export default Header
+export default HeaderComponent

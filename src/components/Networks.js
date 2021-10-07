@@ -1,42 +1,29 @@
 import styled from 'styled-components'
-import freeCodeCamp from '../icons/freecodecamp.svg'
+import { FaGithub, FaFreeCodeCamp, FaCodepen, FaTwitter, FaLinkedin, FaViadeo } from 'react-icons/fa'
 
 const Networks = styled.div`
   display: flex;
-  gap: 10px;
+  justify-content: space-around;
 `
 
-const Network = styled.div`
+const Network = styled.a`
+  font-size: 2em;
   margin: 10px 0;
-  a {
-
-  }
-
-  img {
-    width: 50px;
-  }
+  color: black;
+  margin: 0.5em 0;
 `
 
-function ListNetworks () {
+function NetworksComponent ({ data }) {
   return (
     <Networks>
-      <Network>
-        <a href='https://www.freecodecamp.org/bastienrc' title='Freecodecamp.org'>
-          <img src={freeCodeCamp} alt='Freecodecamp.org' />
-        </a>
-      </Network>
-      <Network>
-        <a href='https://www.freecodecamp.org/bastienrc' title='Freecodecamp.org'>
-          <img src={freeCodeCamp} alt='Freecodecamp.org' />
-        </a>
-      </Network>
-      <Network>
-        <a href='https://www.freecodecamp.org/bastienrc' title='Freecodecamp.org'>
-          <img src={freeCodeCamp} alt='Freecodecamp.org' />
-        </a>
-      </Network>
+      <Network href={data.freecodecamp} title='freeCodeCamp.org'><FaFreeCodeCamp /></Network>
+      <Network href={data.github} title='Github.com'><FaGithub /></Network>
+      <Network href={data.codepen} title='Codepen.io'><FaCodepen /></Network>
+      <Network href={data.twitter} title='Twitter.com'><FaTwitter /></Network>
+      <Network href={data.linkedin} title='Linkedin.com'><FaLinkedin /></Network>
+      <Network href={data.viadeo} title='Viadeo.com'><FaViadeo /></Network>
     </Networks>
   )
 }
 
-export default ListNetworks
+export default NetworksComponent

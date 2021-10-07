@@ -1,11 +1,11 @@
 import styled, { createGlobalStyle } from 'styled-components'
 
 import Experiences from './components/Experiences'
-import Formations from './components/Formations'
-import Contact from './components/Contact'
-import Competences from './components/Competences'
-import Header from './components/Header'
-import { DataExperiences } from './data/data.js'
+import FormationsComponent from './components/Formations'
+import ContactComponent from './components/Contact'
+import CompetencesComponent from './components/Competences'
+import HeaderComponent from './components/Header'
+import { DataIdentity, DataExperiences, DataFormations, DataCompetences } from './data/data.js'
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -47,11 +47,11 @@ function App () {
     <>
       <GlobalStyle />
       <Main>
-        <Header />
+        <HeaderComponent data={DataIdentity} />
         <Experiences data={DataExperiences} />
-        <Formations />
-        <Contact />
-        <Competences />
+        <FormationsComponent data={DataFormations} />
+        <ContactComponent data={DataIdentity} />
+        <CompetencesComponent data={DataCompetences} />
         <QRCode />
       </Main>
     </>
