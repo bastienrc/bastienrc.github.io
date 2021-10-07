@@ -3,8 +3,9 @@ import styled from 'styled-components'
 const Competence = styled.div`
   display: flex;
   justify-content: space-between;
-  margin: 0.5em 0
+  margin: 0.5em 0 0.5em 1.5em
 `
+
 const Name = styled.div``
 const Level = styled.div`
   display: flex;

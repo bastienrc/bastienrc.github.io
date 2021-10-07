@@ -14,17 +14,22 @@ const Title = styled.div`
   margin: 3rem 0 1rem 0;
 `
 
-const Group = styled.div``
+const Group = styled.div`
+  margin: 1em 0 2em 0;
+`
 
 function CompetencesComponent ({ data }) {
+  console.log(data)
   return (
     <Competences>
       <Title>Competences</Title>
       {
-        data.map((competence, i) => (
+        data.map((groupCompetence, i) => (
           <Group key={i}>
-            <h3>competence.group</h3>
-            <CompetenceComponent label='Test' level='4' />
+            <h3>{groupCompetence.groupName}</h3>
+            {groupCompetence.list.map((competence, j) => (
+              <CompetenceComponent key={i} label={competence.label} level={competence.level} />
+            ))}
           </Group>
         ))
       }

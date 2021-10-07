@@ -67,25 +67,28 @@ export const DataExperiences = [
 
 export const DataCompetences = [
   {
-    Developpement: [
-      'HTML',
-      'CSS',
-      'Javascript',
-      'PHP'
+    groupName: 'Systèmes d’exploitation',
+    list: [
+      { label: 'Gnu/Linux Debian', level: 3 },
+      { label: 'Windows', level: 2 }
     ]
   },
   {
-    Multimedia: [
-      'Inkscape',
-      'Gimp',
-      'Scribus',
-      'LibreOffice'
+    groupName: 'Bureautique et Multimédia',
+    list: [
+      { label: 'Inkscape', level: 3 },
+      { label: 'Gimp', level: 2 },
+      { label: 'LibreOffice', level: 2 },
+      { label: 'Scribus', level: 1 }
     ]
   },
   {
-    'Systèmes d’exploitation': [
-      'Gnu/Linux Debian',
-      'Windows'
+    groupName: 'Développement',
+    list: [
+      { label: 'HTML5', level: 3 },
+      { label: 'CSS3', level: 3 },
+      { label: 'Javascript (ES6)', level: 2 },
+      { label: 'PHP', level: 1 }
     ]
   }
 ]
