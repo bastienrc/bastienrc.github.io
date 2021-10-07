@@ -27,13 +27,12 @@ export const GlobalStyle = createGlobalStyle`
 
 export const Title = styled.h2`
   text-transform: uppercase;
-  font-size: 1rem;
-  line-height: 1.2rem;
+  font-size: 1em;
   font-weight: 600;
-  padding: 0 0 15px 0;
-  border-bottom: 2px solid black;
+  padding: 0 0 0.6em 0;
+  border-bottom: 0.11em solid black;
   color: #060;
-  margin: 3rem 0 1rem 0;
+  margin: 3em 0 1em 0;
 `
 
 export const Section = styled.section`

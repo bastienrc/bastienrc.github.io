@@ -7,10 +7,10 @@ const Networks = styled.div`
 `
 
 const Network = styled.a`
-  font-size: 2em;
-  margin: 10px 0;
+  font-size: 2.5em;
+  margin: 10px 0 0 0;
   color: black;
-  margin: 0.5em 0;
+  margin-top: 0.5em;
 `
 
 function NetworksComponent ({ data }) {

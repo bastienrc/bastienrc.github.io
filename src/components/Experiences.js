@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Section, Title } from './GlobalStyle'
 
 const Xp = styled.div`
-  margin: 1rem 0 2rem 0;
+  margin: 1em 0 2em 0;
 `
 
 const Poste = styled.div`

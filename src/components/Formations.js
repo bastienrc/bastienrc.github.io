@@ -2,8 +2,10 @@ import styled from 'styled-components'
 import { Section, Title } from './GlobalStyle'
 
 const Formation = styled.div`
-  display: flex;
-  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 1fr;
+  margin: 1em 0;
 `
 
 const Periode = styled.span`
@@ -11,20 +13,24 @@ const Periode = styled.span`
   align-items: center;
   justify-content: center;
   background-color: black;
+  margin-right: 0.5em;
   width: 80px;
   height: 80px;
   text-align: center;
   color: white;
   border-radius: 50%;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 `
 
 const Info = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   p {
-    font-size: 0.9rem;
-    line-height: 1rem;
+    font-size: 0.9em;
+    line-height: 1.2em;
   }
-  margin: 15px 0 0 5px;
 `
 
 const Option = styled.p`

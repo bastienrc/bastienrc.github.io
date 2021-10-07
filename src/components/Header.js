@@ -6,18 +6,18 @@ const Header = styled.div`
 `
 
 const Fullname = styled.div`
-  font-size: 1.8rem;
+  font-size: 1.2em;
 `
 
 const Info = styled.div`
-  font-size: 0.8rem;
+  font-size: 0.8em;
   margin: 0.2rem 0 1rem 0;
 `
 
 const PosteSearch = styled.div`
   font-family: 'Fira Code', 'Courier New', Courier, monospace;
-  margin: 2rem 0;
-  font-size: 3rem;
+  margin: 1.2em 0 1.8em 0;
+  font-size: 2.2em;
   color: var(--title-color);
 `
 

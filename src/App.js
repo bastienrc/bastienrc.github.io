@@ -10,7 +10,7 @@ import QRCode from './components/QRCode'
 import { DataIdentity, DataExperiences, DataFormations, DataCompetences } from './data/data.js'
 
 const Main = styled.main`
-  margin: 1rem;
+  margin: 1em 0;
 
   @media (min-width: 800px) {
     margin: 3rem auto;
