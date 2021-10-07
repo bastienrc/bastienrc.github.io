@@ -28,7 +28,7 @@ const Resume = styled.div`
 function Experiences ({ data }) {
   return (
     <>
-      <XpTitle>Expérience Professionelle</XpTitle>
+      <XpTitle>Expérience Professionnelle</XpTitle>
       {data.map((xp) => (
         <Xp key={xp.id}>
           <Poste>{xp.Poste}</Poste>
