@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
   @media (min-width: 800px) {
     body {
       background: #DDDDDD; /* Au cas ou les dégradés ne fonctionnent pas*/
-      background: radial-gradient(ellipse, #DDDDDD, #333333)
+      background: radial-gradient(ellipse, #DDDDDD, #003300)
     }
   }
 `

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Networks from './Networks'
+import ListNetworks from './Networks'
 
 const Title = styled.div`
   text-transform: uppercase;
@@ -33,10 +33,9 @@ function Contact () {
       <Address>4 Avenue Charles de Gaulle</Address>
       <Address>62200 Boulogne-sur-mer</Address>
       <Mail href='mailto:colbertsebastien@gmail.com'>colbertsebastien@gmail.com</Mail>
-      <Site>sebastiencolbert.fr</Site>
-      <Networks />
+      <Site href='https://sebastiencolbert.fr'>sebastiencolbert.fr</Site>
+      <ListNetworks />
     </>
-
   )
 }
 
