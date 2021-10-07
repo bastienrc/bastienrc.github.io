@@ -1,15 +1,5 @@
 import styled from 'styled-components'
-
-const XpTitle = styled.div`
-  text-transform: uppercase;
-  font-size: 1rem;
-  line-height: 1.2rem;
-  font-weight: 600;
-  padding: 0 0 15px 0;
-  border-bottom: 2px solid black;
-  color: #060;
-  margin: 2rem 0 1rem 0;
-`
+import { Section, Title } from './GlobalStyle'
 
 const Xp = styled.div`
   margin: 1rem 0 2rem 0;
@@ -27,8 +17,8 @@ const Resume = styled.div`
 
 function Experiences ({ data }) {
   return (
-    <>
-      <XpTitle>Expérience Professionnelle</XpTitle>
+    <Section>
+      <Title>Expérience Professionnelle</Title>
       {data.map((xp) => (
         <Xp key={xp.id}>
           <Poste>{xp.Poste}</Poste>
@@ -36,7 +26,7 @@ function Experiences ({ data }) {
           <Resume>{xp.Resume}</Resume>
         </Xp>
       ))}
-    </>
+    </Section>
   )
 };
 

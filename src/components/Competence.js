@@ -6,7 +6,6 @@ const Competence = styled.div`
   margin: 0.5em 0 0.5em 1.5em
 `
 
-const Name = styled.div``
 const Level = styled.div`
   display: flex;
 `
@@ -27,7 +26,7 @@ function CompetenceComponent ({ label, level }) {
 
   return (
     <Competence>
-      <Name>{label}</Name>
+      <span>{label}</span>
       <Level>{levels}</Level>
     </Competence>
   )

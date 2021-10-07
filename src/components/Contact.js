@@ -1,45 +1,26 @@
 import styled from 'styled-components'
+import { Section, Title } from './GlobalStyle'
 import NetworksComponent from './Networks'
 
-const Contact = styled.div`
-  margin: 10px 0;
-`
-
-const Title = styled.div`
-  text-transform: uppercase;
-  font-size: 1rem;
-  line-height: 1.2rem;
-  font-weight: 600;
-  padding: 0 0 15px 0;
-  border-bottom: 2px solid black;
-  color: #060;
-  margin: 3rem 0 1rem 0;
-`
-
-const Address = styled.div``
-
-const Mail = styled.a`
-  display: block;
+const Link = styled.a`
   text-decoration: none;
   color: black;
 `
 
-const Site = styled.a`
-  display: block;
-  text-decoration: none;
-  color: black;
+const P = styled.p`
+  margin: 0.2em 0
 `
 
 function ContactComponent ({ data }) {
   return (
-    <Contact>
+    <Section>
       <Title>Contact</Title>
-      <Address>{data.address}</Address>
-      <Address>{data.cp} {data.ville}</Address>
-      <Mail href={'mailto:' + data.mail}>{data.mail}</Mail>
-      <Site href={'https://' + data.site}>{data.site}</Site>
+      <P>{data.address}</P>
+      <P>{data.cp} {data.ville}</P>
+      <P><Link href={'mailto:' + data.mail}>{data.mail}</Link></P>
+      <P><Link href={'https://' + data.site}>{data.site}</Link></P>
       <NetworksComponent data={data.networks} />
-    </Contact>
+    </Section>
   )
 }
 

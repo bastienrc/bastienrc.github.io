@@ -1,17 +1,5 @@
 import styled from 'styled-components'
-
-const Title = styled.div`
-  text-transform: uppercase;
-  font-size: 1rem;
-  line-height: 1.2rem;
-  font-weight: 600;
-  padding: 0 0 15px 0;
-  border-bottom: 2px solid black;
-  color: #060;
-  margin: 1rem 0;
-`
-
-const Formations = styled.div``
+import { Section, Title } from './GlobalStyle'
 
 const Formation = styled.div`
   display: flex;
@@ -43,9 +31,9 @@ const Option = styled.p`
   font-style: italic;
 `
 
-function FormationsComponent ({ data }) {
+function Formations ({ data }) {
   return (
-    <Formations>
+    <Section>
       <Title>Formation</Title>
       {data.map((formation) => (
         <Formation key={formation.periode}>
@@ -57,8 +45,8 @@ function FormationsComponent ({ data }) {
           </Info>
         </Formation>
       ))}
-    </Formations>
+    </Section>
   )
 }
 
-export default FormationsComponent
+export default Formations

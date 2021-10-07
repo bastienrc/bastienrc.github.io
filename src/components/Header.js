@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 import '@fontsource/fira-code'
 
-const Header = styled.div``
+const Header = styled.div`
+  margin: 1em
+`
 
 const Fullname = styled.div`
   font-size: 1.8rem;
@@ -16,7 +18,7 @@ const PosteSearch = styled.div`
   font-family: 'Fira Code', 'Courier New', Courier, monospace;
   margin: 2rem 0;
   font-size: 3rem;
-  color: #060
+  color: var(--title-color);
 `
 
 function HeaderComponent ({ data }) {

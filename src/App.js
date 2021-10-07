@@ -1,4 +1,5 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import styled from 'styled-components'
+import { GlobalStyle } from './components/GlobalStyle'
 
 import Experiences from './components/Experiences'
 import FormationsComponent from './components/Formations'
@@ -7,25 +8,6 @@ import CompetencesComponent from './components/Competences'
 import HeaderComponent from './components/Header'
 import QRCode from './components/QRCode'
 import { DataIdentity, DataExperiences, DataFormations, DataCompetences } from './data/data.js'
-
-const GlobalStyle = createGlobalStyle`
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-
-  @media (min-width: 800px) {
-    body {
-      background: #DDDDDD; /* Au cas ou les dégradés ne fonctionnent pas*/
-      background: radial-gradient(ellipse, #DDDDDD, #003300)
-    }
-  }
-`
 
 const Main = styled.main`
   margin: 1rem;
@@ -37,7 +19,7 @@ const Main = styled.main`
     height: 100%;
     border: solid #333 3px;
     box-shadow: 4px 4px 8px 2px #000000;
-    background: #FFF;
+    background: var(--bg-main-color);
   }
 `
 
