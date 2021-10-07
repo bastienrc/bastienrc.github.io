@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.js": "/static/js/main.df8e4e08.chunk.js",
-    "main.js.map": "/static/js/main.df8e4e08.chunk.js.map",
+    "main.js": "/static/js/main.c4ba3928.chunk.js",
+    "main.js.map": "/static/js/main.c4ba3928.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e7f0a1cb.js",
     "runtime-main.js.map": "/static/js/runtime-main.e7f0a1cb.js.map",
     "static/css/2.49c0d76c.chunk.css": "/static/css/2.49c0d76c.chunk.css",
-    "static/js/2.58b2c8a5.chunk.js": "/static/js/2.58b2c8a5.chunk.js",
-    "static/js/2.58b2c8a5.chunk.js.map": "/static/js/2.58b2c8a5.chunk.js.map",
+    "static/js/2.e79b327c.chunk.js": "/static/js/2.e79b327c.chunk.js",
+    "static/js/2.e79b327c.chunk.js.map": "/static/js/2.e79b327c.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.49c0d76c.chunk.css.map": "/static/css/2.49c0d76c.chunk.css.map",
-    "static/js/2.58b2c8a5.chunk.js.LICENSE.txt": "/static/js/2.58b2c8a5.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/fira-code-latin-ext-400-normal.db5a1888.woff2"
+    "static/js/2.e79b327c.chunk.js.LICENSE.txt": "/static/js/2.e79b327c.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/fira-code-latin-ext-400-normal.db5a1888.woff2",
+    "static/media/sebastiencolbert.fr.3a7f4966.svg": "/static/media/sebastiencolbert.fr.3a7f4966.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e7f0a1cb.js",
     "static/css/2.49c0d76c.chunk.css",
-    "static/js/2.58b2c8a5.chunk.js",
-    "static/js/main.df8e4e08.chunk.js"
+    "static/js/2.e79b327c.chunk.js",
+    "static/js/main.c4ba3928.chunk.js"
   ]
 }
