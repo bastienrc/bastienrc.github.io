@@ -28,6 +28,6 @@ function Experiences ({ data }) {
       ))}
     </Section>
   )
-};
+}
 
 export default Experiences

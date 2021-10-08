@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import '@fontsource/fira-code'
 
-const Header = styled.div`
+const HeaderContainer = styled.header`
   margin: 1em
 `
 
@@ -21,14 +21,14 @@ const PosteSearch = styled.div`
   color: var(--title-color);
 `
 
-function HeaderComponent ({ data }) {
+function Header ({ data }) {
   return (
-    <Header>
+    <HeaderContainer>
       <Fullname>{data.fullname}</Fullname>
       <Info>{data.info}</Info>
       <PosteSearch>{data.posteSearch}</PosteSearch>
-    </Header>
+    </HeaderContainer>
   )
 }
 
-export default HeaderComponent
+export default Header

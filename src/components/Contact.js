@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Section, Title } from './GlobalStyle'
-import NetworksComponent from './Networks'
+import Networks from './Networks'
 
 const Link = styled.a`
   text-decoration: none;
@@ -11,7 +11,7 @@ const P = styled.p`
   margin: 0.2em 0
 `
 
-function ContactComponent ({ data }) {
+function Contact ({ data }) {
   return (
     <Section>
       <Title>Contact</Title>
@@ -19,9 +19,9 @@ function ContactComponent ({ data }) {
       <P>{data.cp} {data.ville}</P>
       <P><Link href={'mailto:' + data.mail}>{data.mail}</Link></P>
       <P><Link href={'https://' + data.site}>{data.site}</Link></P>
-      <NetworksComponent data={data.networks} />
+      <Networks data={data.networks} />
     </Section>
   )
 }
 
-export default ContactComponent
+export default Contact

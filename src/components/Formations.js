@@ -12,12 +12,12 @@ const Periode = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: var(--main-color);
   margin-right: 0.5em;
   width: 80px;
   height: 80px;
   text-align: center;
-  color: white;
+  color: var(--bg-main-color);
   border-radius: 50%;
   font-size: 1.2rem;
 `

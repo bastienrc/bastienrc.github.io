@@ -2,10 +2,10 @@ import styled from 'styled-components'
 import { GlobalStyle } from './components/GlobalStyle'
 
 import Experiences from './components/Experiences'
-import FormationsComponent from './components/Formations'
-import ContactComponent from './components/Contact'
-import CompetencesComponent from './components/Competences'
-import HeaderComponent from './components/Header'
+import Formations from './components/Formations'
+import Contact from './components/Contact'
+import Competences from './components/Competences'
+import Header from './components/Header'
 import QRCode from './components/QRCode'
 import { DataIdentity, DataExperiences, DataFormations, DataCompetences } from './data/data.js'
 
@@ -28,11 +28,11 @@ function App () {
     <>
       <GlobalStyle />
       <Main>
-        <HeaderComponent data={DataIdentity} />
+        <Header data={DataIdentity} />
         <Experiences data={DataExperiences} />
-        <FormationsComponent data={DataFormations} />
-        <ContactComponent data={DataIdentity} />
-        <CompetencesComponent data={DataCompetences} />
+        <Formations data={DataFormations} />
+        <Contact data={DataIdentity} />
+        <Competences data={DataCompetences} />
         <QRCode />
       </Main>
     </>

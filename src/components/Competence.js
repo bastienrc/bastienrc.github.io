@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Competence = styled.div`
+const CompetenceContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 0.5em 0 0.5em 1.5em
@@ -18,18 +18,18 @@ const Star = styled.span`
   border-radius: 50%;
 `
 
-function CompetenceComponent ({ label, level }) {
+function Competence ({ label, level }) {
   const levels = []
   for (let i = 0; i < level; i++) {
     levels.push(<Star />)
   }
 
   return (
-    <Competence>
+    <CompetenceContainer>
       <span>{label}</span>
       <Level>{levels}</Level>
-    </Competence>
+    </CompetenceContainer>
   )
 }
 
-export default CompetenceComponent
+export default Competence

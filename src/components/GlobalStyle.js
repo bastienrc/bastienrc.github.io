@@ -5,15 +5,17 @@ export const GlobalStyle = createGlobalStyle`
     --bg-body-color: #030;
     --bg-main-color: #FFF;
     --title-color: #060;
+    --main-color: #111;
   }
 
-  * {
+  *, *::after, *::before {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
 
   body {
+    color: var(--main-color);
     font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
@@ -31,7 +33,7 @@ export const Title = styled.h2`
   font-weight: 600;
   padding: 0 0 0.6em 0;
   border-bottom: 0.11em solid black;
-  color: #060;
+  color: var(--title-color);
   margin: 3em 0 1em 0;
 `
 
