@@ -3,9 +3,9 @@ import styled, { createGlobalStyle } from 'styled-components'
 export const GlobalStyle = createGlobalStyle`
   :root{
     --bg-body-color: #030;
-    --bg-main-color: #FFF;
-    --title-color: #060;
-    --main-color: #111;
+    --bg-main-color: ${props => props.theme.bgColor};
+    --title-color: ${props => props.theme.titleColor};
+    --main-color: ${props => props.theme.textColor};
   }
 
   *, *::after, *::before {

@@ -1,5 +1,7 @@
-import styled from 'styled-components'
+import { useState } from 'react'
+import styled, { ThemeProvider } from 'styled-components'
 import { GlobalStyle } from './components/GlobalStyle'
+import { darkTheme, lightTheme } from './components/themes'
 
 import Experiences from './components/Experiences'
 import Formations from './components/Formations'
@@ -7,19 +9,24 @@ import Contact from './components/Contact'
 import Competences from './components/Competences'
 import Header from './components/Header'
 import QRCode from './components/QRCode'
+import Darkmode from './components/Darkmode'
+
 import { DataIdentity, DataExperiences, DataFormations, DataCompetences } from './data/data.js'
 
 const Main = styled.main`
+  position: relative;
   margin: 1em 0;
 
   @media (min-width: 800px) {
-    margin: 3rem auto;
+    margin: 2rem;
     padding: 3rem;
-    width: 90%;
-    height: 100%;
     border: solid #333 3px;
     box-shadow: 4px 4px 8px 2px #000000;
     background: var(--bg-main-color);
+  }
+
+  @media (min-width: 1200px) {
+    margin: 5rem;
   }
 `
 
@@ -42,10 +49,13 @@ const Col2 = styled.div`
 `
 
 function App () {
+  let [isDarkTheme, toggleTheme] = useState(true);
+
   return (
-    <>
+    <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       <GlobalStyle />
       <Main>
+        <Darkmode actif />
         <Header data={DataIdentity} />
         <Container>
           <Col1>
@@ -59,7 +69,7 @@ function App () {
           </Col2>
         </Container>
       </Main>
-    </>
+    </ThemeProvider>
   )
 }
 
