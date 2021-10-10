@@ -15,6 +15,7 @@ const Info = styled.div`
 `
 
 const PosteSearch = styled.div`
+  transition: 0.35s;
   font-family: 'Fira Code', 'Courier New', Courier, monospace;
   margin: 1.2em 0 1.8em 0;
   font-size: 2.2em;

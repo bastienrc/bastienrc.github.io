@@ -7,9 +7,10 @@ const NetworksContainer = styled.div`
 `
 
 const Network = styled.a`
+  transition: 0.35s;
   font-size: 2.5em;
   margin: 10px 0 0 0;
-  color: black;
+  color: var(--elt-color);
   margin-top: 0.5em;
 `
 

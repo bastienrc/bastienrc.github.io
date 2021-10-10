@@ -10,10 +10,11 @@ const Level = styled.div`
   display: flex;
 `
 const Star = styled.span`
+  transition: 0.35s;
   display: block;
   width: 20px;
   height: 20px;
-  background-color: #000;
+  background-color: var(--main-color);
   margin: 0 5px;
   border-radius: 50%;
 `

@@ -9,6 +9,7 @@ const Formation = styled.div`
 `
 
 const Periode = styled.span`
+  transition: 0.35s;
   display: flex;
   align-items: center;
   justify-content: center;

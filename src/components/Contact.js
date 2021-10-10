@@ -3,8 +3,9 @@ import { Section, Title } from './GlobalStyle'
 import Networks from './Networks'
 
 const Link = styled.a`
+  transition: 0.35s;
   text-decoration: none;
-  color: black;
+  color: var(--main-color);
 `
 
 const P = styled.p`

@@ -1,8 +1,8 @@
-import { useState } from 'react'
 import styled from 'styled-components'
 import { FaSun, FaMoon } from 'react-icons/fa'
 
 const Interupteur = styled.button`
+  transition: 0.35s;
   display: block;
   position: absolute;
   right: 0;
@@ -13,20 +13,12 @@ const Interupteur = styled.button`
   border: none;
   border-radius: 0 0 0 100%;
   background-color: var(--title-color);
-  color: var(--bg-main-color)
+  color: var(--main-color);
 `
 
-function Darkmode ({ isDarkTheme }) {
-  const [darkmode, setDarkmode] = useState(isDarkTheme)
-
-  const onHandleClick = e => {
-    setDarkmode(false)
-  }
-
+function Darkmode ({ action, theme }) {
   return (
-    <>
-      <Interupteur onClick={onHandleClick}>{darkmode ? <FaSun /> : <FaMoon />}</Interupteur>
-    </>
+    <Interupteur onClick={action}>{theme ? <FaSun /> : <FaMoon />}</Interupteur>
   )
 }
 

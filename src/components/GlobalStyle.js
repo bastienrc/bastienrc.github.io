@@ -2,10 +2,10 @@ import styled, { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
   :root{
-    --bg-body-color: #030;
-    --bg-main-color: ${props => props.theme.bgColor};
+    --bg-body-color: ${props => props.theme.bgBodyColor};
+    --bg-main-color: ${props => props.theme.bgMainColor};
+    --main-color: ${props => props.theme.mainColor};
     --title-color: ${props => props.theme.titleColor};
-    --main-color: ${props => props.theme.textColor};
   }
 
   *, *::after, *::before {
@@ -21,6 +21,7 @@ export const GlobalStyle = createGlobalStyle`
 
   @media (min-width: 800px) {
     body {
+      transition: 0.35s;
       background: #DDDDDD; /* Au cas ou les dégradés ne fonctionnent pas*/
       background: radial-gradient(ellipse, #DDDDDD, var(--bg-body-color))
     }
@@ -28,11 +29,12 @@ export const GlobalStyle = createGlobalStyle`
 `
 
 export const Title = styled.h2`
+  transition: 0.35s;
   text-transform: uppercase;
   font-size: 1em;
   font-weight: 600;
   padding: 0 0 0.6em 0;
-  border-bottom: 0.11em solid black;
+  border-bottom: 0.11em solid var(--main-color);
   color: var(--title-color);
   margin: 3em 0 1em 0;
 `
