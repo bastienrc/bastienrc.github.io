@@ -2,7 +2,7 @@
   "name": "bastienrc.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bastienrc.github.io/",
+  "homepage": "https://bastienrc.github.io/cv/",
   "dependencies": {
     "@fontsource/fira-code": "^4.5.1",
     "@fontsource/roboto": "^4.5.1",
