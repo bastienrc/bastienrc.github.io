@@ -6,6 +6,9 @@ const Link = styled.a`
   transition: 0.35s;
   text-decoration: none;
   color: var(--main-color);
+  &:hover {
+    color: var(--title-color);
+  }
 `
 
 const P = styled.p`

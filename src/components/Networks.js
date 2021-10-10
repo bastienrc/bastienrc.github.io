@@ -12,6 +12,9 @@ const Network = styled.a`
   margin: 10px 0 0 0;
   color: var(--elt-color);
   margin-top: 0.5em;
+  &:hover {
+    color: var(--title-color);
+  }
 `
 
 function Networks ({ data }) {
