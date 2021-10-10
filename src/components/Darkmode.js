@@ -6,7 +6,7 @@ const Interupteur = styled.button`
   display: block;
   position: absolute;
   right: 0;
-  top: 0;
+  top: -1rem;
   font-size: 2em;
   padding: 0.5em;
   cursor: pointer;
@@ -14,6 +14,9 @@ const Interupteur = styled.button`
   border-radius: 0 0 0 100%;
   background-color: var(--title-color);
   color: var(--main-color);
+  @media (min-width: 1000px) {
+    top: 0;
+  }
 `
 
 function Darkmode ({ action, theme }) {

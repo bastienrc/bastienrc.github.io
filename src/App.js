@@ -19,8 +19,8 @@ const Main = styled.main`
   position: relative;
   margin: 1em 0;
 
-  @media (min-width: 800px) {
-    width: 80%;
+  @media (min-width: 1000px) {
+    width: 90%;
     margin: 2rem auto;
     padding: 3rem;
     border: solid #333 3px;
@@ -30,19 +30,19 @@ const Main = styled.main`
 `
 
 const Container = styled.div`
-  @media (min-width: 800px) {
+  @media (min-width: 1000px) {
     display: flex;
   }
 `
 
 const Col1 = styled.div`
-  @media (min-width: 800px) {
+  @media (min-width: 1000px) {
     width: calc(100% / 3 * 2);
   }
 `
 
 const Col2 = styled.div`
-  @media (min-width: 800px) {
+  @media (min-width: 1000px) {
     width: calc(100% / 3);
   }
 `

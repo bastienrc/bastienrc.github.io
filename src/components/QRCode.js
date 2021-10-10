@@ -5,11 +5,12 @@ import qrCodeImgLight from '../qr-code/light-sebastiencolbert.fr.svg'
 
 const QrcLink = styled.a`
   transition: 0.35s;
-  margin: 1rem 0;
+  margin: 2rem 0;
   display: flex;
   justify-content: center;
   img {
     width: 80%;
+    max-width: 300px;
   }
 `
 

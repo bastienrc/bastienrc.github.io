@@ -15,11 +15,13 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    transition: 0.35s;
     color: var(--main-color);
     font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: var(--bg-main-color);;
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 1000px) {
     body {
       transition: 0.35s;
       background: #DDDDDD; /* Au cas ou les dégradés ne fonctionnent pas*/
