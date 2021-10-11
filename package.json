@@ -1,8 +1,20 @@
 {
-  "name": "bastienrc.github.io",
+  "name": "cv",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://bastienrc.github.io/cv/",
+  "description": "CV de Sébastien Colbert",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bastienrc/cv.git"
+  },
+  "keywords": ["Sébastien Colbert", "CV", "React"],
+  "author": "Sebastien Colbert <colbertsebastien@gmail.com> (https://sebastiencolbert.fr/)",
+  "license": "CECILL-2.1",
+  "bugs": {
+    "url": "https://github.com/bastienrc/cv/issues"
+  },
   "dependencies": {
     "@fontsource/fira-code": "^4.5.1",
     "@fontsource/roboto": "^4.5.1",
