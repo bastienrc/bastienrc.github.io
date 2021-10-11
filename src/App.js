@@ -48,17 +48,20 @@ const Col2 = styled.div`
 `
 
 function App () {
-  const theme = window.localStorage.getItem('theme')
-  const [isDarkTheme, toggleTheme] = useState(theme || null)
+  const [isDarkTheme, toggleTheme] = useState()
 
   const action = () => {
     toggleTheme(!isDarkTheme)
-    window.localStorage.setItem('theme', isDarkTheme)
+    window.localStorage.setItem('isTheme', JSON.stringify(!isDarkTheme))
   }
 
   useEffect(() => {
-    window.localStorage.setItem('theme', isDarkTheme)
-  }, [isDarkTheme])
+    toggleTheme(false)
+    const lsDark = JSON.parse(window.localStorage.getItem('isTheme'))
+    if (lsDark) {
+      toggleTheme(lsDark)
+    }
+  }, [])
 
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
