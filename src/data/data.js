@@ -90,10 +90,24 @@ export const DataCompetences = [
       { label: 'Javascript (ES6)', level: 2 },
       { label: 'PHP', level: 1 }
     ]
+  },
+  {
+    groupName: 'DevOps',
+    list: [
+      { label: 'Docker', level: 2 },
+      { label: 'Kubernetes', level: 1 },
+      { label: 'CI/CD', level: 1 }
+    ]
   }
 ]
 
 export const DataFormations = [
+  {
+    periode: '2022',
+    diplome: 'Titre professionnel « Concepteur Développeur d’Application »',
+    option: '',
+    ets: 'Simplon Boulogne-sur-mer'
+  },
   {
     periode: '2020',
     diplome: 'Titre professionnel « Développeur Web et Web mobile »',
