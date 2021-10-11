@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 import { GlobalStyle } from './components/GlobalStyle'
 import { darkTheme, lightTheme } from './components/themes'
@@ -48,11 +48,17 @@ const Col2 = styled.div`
 `
 
 function App () {
-  const [isDarkTheme, toggleTheme] = useState(false)
+  const theme = window.localStorage.getItem('theme')
+  const [isDarkTheme, toggleTheme] = useState(theme || null)
 
   const action = () => {
     toggleTheme(!isDarkTheme)
+    window.localStorage.setItem('theme', isDarkTheme)
   }
+
+  useEffect(() => {
+    window.localStorage.setItem('theme', isDarkTheme)
+  }, [isDarkTheme])
 
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
