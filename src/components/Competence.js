@@ -22,7 +22,7 @@ const Star = styled.span`
 function Competence ({ label, level }) {
   const levels = []
   for (let i = 0; i < level; i++) {
-    levels.push(<Star />)
+    levels.push(<Star key={i} />)
   }
 
   return (
